@@ -14,7 +14,7 @@ function Programming() {
     const bookstore = {
         url: 'https://firebasestorage.googleapis.com/v0/b/resume-38774.appspot.com/o/boookstore.mp4?alt=media&token=05e4088b-b319-4f26-886b-f70739d83a14',
         title: 'Online Bookstore',
-        tools: 'TypeScript , Next.js , Nest.js, MySQL , Ant Design',
+        tools: 'TypeScript , Next.js , Nest.js , MySQL , CSS , Ant Design',
         explain: 'This online bookstore was inspired by my obsession with books. I would like some bookstore to use this website I developed someday.',
     }
 
@@ -32,6 +32,13 @@ function Programming() {
         explain: 'MiniGolf Online is my multiplayer game project in college class',
     }
 
+    const chart = {
+        url: 'https://firebasestorage.googleapis.com/v0/b/resume-38774.appspot.com/o/dynamicchart.mp4?alt=media&token=94637237-7366-4274-af33-b8c931937d56',
+        title: 'Dynamic Animation Chart',
+        tools: 'CSS , Less',
+        explain: 'Height of each chart depends on amount of data',
+    }
+
     const { Meta } = Card;
 
     const onClick = (title:string) =>{
@@ -45,6 +52,11 @@ function Programming() {
             setTitle(maths.title);
             setExplain(maths.explain);
             setTools(maths.tools);
+        } else if (title == 'chart'){
+            setUrl(chart.url);
+            setTitle(chart.title);
+            setExplain(chart.explain);
+            setTools(chart.tools);
         } else {
             setUrl(minigolf.url);
             setTitle(minigolf.title);
@@ -69,7 +81,7 @@ function Programming() {
                 >
                     <Meta 
                     style={{ fontSize: '22px' }}
-                    title="Website Development (Full-stack)" description="Online Bookstore" />
+                    title="Web Development (Full-stack)" description="Online Bookstore" />
                 </Card>
 
                 <Card className={`portcard`} onClick={()=>onClick('maths')}
@@ -80,6 +92,16 @@ function Programming() {
                     <Meta 
                     style={{ fontSize: '22px' }}
                     title="Application Development (Full-stack)" description="Maths Phra Dhabos" />
+                </Card>
+
+                <Card className={`portcard`} onClick={()=>onClick('chart')}
+                    hoverable
+                    style={{ width: 500 }}
+                    cover={<img alt='dynamicchart' src="https://firebasestorage.googleapis.com/v0/b/resume-38774.appspot.com/o/dynamicchart.png?alt=media&token=6ecf0d6b-cace-413c-8808-4e6f604b5fb0" />}
+                >
+                    <Meta 
+                    style={{ fontSize: '22px' }}
+                    title="Web Development (Frontend)" description="Dynamic Animation Chart" />
                 </Card>
 
                 <Card className={`portcard`} onClick={()=>onClick('minigolf')}
