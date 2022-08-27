@@ -17,7 +17,7 @@ function Resume() {
 
                 
                 <div className={`resume_left`}>
-                    <Image className={`mypic`} src={mypic2} width={200} height={200} />
+                    <Image className={`mypic`} src={mypic2} alt={`mypic`} width={200} height={200} />
 
                     <h3>Contact</h3>
                     <div className={`contact`}>
@@ -98,13 +98,13 @@ function Resume() {
                     </div>
 
                     <h3>About me</h3>
-                    <p>I'm 22 years old. I was born on March 6, 2000.<br /> I'm a fresh graduated from King Mongkut's University of Technology Thonburi in department of Media Technology.</p>
-                    <p>I'd like to work as a Full-Stack Developer <br /> but Frontend/Backend Developer is fine!</p>
+                    <p>I&apos;m 22 years old. I was born on March 6, 2000.<br /> I&apos;m a fresh graduated from King Mongkut&apos;s University of Technology Thonburi in department of Media Technology.</p>
+                    <p>I&apos;d like to work as a Full-Stack Developer <br /> but Frontend/Backend Developer is fine!</p>
 
                     <h3>Education</h3>
                     <div className={`college education`}>
                         <h4>College | 2015-2018 </h4>
-                        <span>Media Technology at King Mongkut's University of Technology Thonburi (GPAX 3.51)</span>
+                        <span>Media Technology at King Mongkut&apos;s University of Technology Thonburi (GPAX 3.51)</span>
                     </div>
                     <div className={`hightschool education`}>
                         <h4>High School | 2019-2022 </h4>
