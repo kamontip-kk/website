@@ -1,0 +1,546 @@
+@import '~antd/dist/antd.less';
+
+@brown: #503019;
+@red: #e94629;
+@orange: #f79544;
+@yellow: #fad636;
+@lightyellow: #fff788;
+@darkcream: #ecd5aa;
+@cream: #f0ece2;
+@lightcream : #ffffff;
+@darkblue: #4674b8;
+@blue: #4e8cff;
+@darkgray: #30312c;
+@gray: #8f8f8d;
+@lightgray: #afafac;
+
+// --------------------------------------------------- Global -------------------------------------------
+
+.container {
+  background-color: @lightcream;
+  width: 100%;
+  padding: 180px 350px;
+  font-size: 24px;
+}
+
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid @yellow;
+  // text-align: center;
+}
+
+.section_title {
+  text-align: center;
+  width: auto;
+  color: @blue;
+  margin-bottom: 70px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 35px;
+
+  .card {
+    font-size: 18px;
+    margin: 0.4rem;
+    padding: 1rem;
+    text-align: left;
+    color: @gray;
+    border: 1px solid @lightgray;
+    text-decoration: none;
+    border-radius: 16px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container{
+    padding: 100px 40px;
+  }
+  .section{
+    padding: 30px 0;
+  }
+  .section_title {
+    margin-bottom: 40px;
+  }
+  .grid {
+    width: 100%;
+    .card{
+      font-size: 14px;
+      margin: 0.2rem;
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    padding: 100px 40px;
+  }
+  .section{
+    padding: 30px 0;
+  }
+  .section_title {
+    margin-bottom: 40px;
+  }
+  .grid {
+    width: 100%;
+    .card{
+      font-size: 14px;
+      margin: 0.2rem;
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+// --------------------------------------------------- Header -------------------------------------------
+
+.Headercolor {
+  background-color: @red;
+}
+
+.Header {
+  z-index: 2;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid @cream;
+  transition: 0.3s;
+
+  .header_container {
+    display: flex;
+    align-items: center;
+    padding: 25px 350px;
+    justify-content: space-between;
+    font-size: 24px;
+
+    a {
+      color: @red;
+    }
+
+    a:hover {
+      color: @darkcream;
+    }
+
+    .rightnav {
+      display: flex;
+
+      .rightitem {
+        padding-left: 40px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 414px) {
+  .Header{
+    // width: 40%;
+    .header_container{
+      font-size: 16px;
+      padding: 25px 40px;
+      .rightitem {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Header{
+    .header_container{
+      font-size: 24px;
+      padding: 25px 40px;
+      .rightitem {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------- Footer -------------------------------------------
+
+.Footer {
+  padding: 12px 350px 1px 350px;
+  background-color: @cream;
+  font-size: 15px;
+  p {
+    color: @gray;
+  }
+
+  a {
+    color: @lightgray;
+  }
+
+  a:hover {
+    color: @gray;
+  }
+
+  .title {
+    color: @red;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .footersection {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    .contactitem {
+      margin-left: 8px;
+    }
+  }
+
+}
+
+@media (max-width: 414px) {
+  .Footer{
+    padding: 10px 40px;
+    .footersection {
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-bottom: 15px;
+      .contact{
+        margin-top: 10px;
+      }
+      .contactitem {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer{
+    padding: 10px 40px;
+    .footersection {
+      width: 70%;
+      // flex-direction: column;
+      margin-bottom: 15px;
+      .contact{
+        margin-top: 10px;
+      }
+      .contactitem {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------- Main -------------------------------------------
+
+.Main {
+  .greeting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .aboutme {
+      max-width: 60%;
+      color: @gray;
+      padding-right: 30px;
+
+      p {
+        font-size: 20px;
+      }
+
+      .myname {
+        font-size: 48px;
+        font-weight: 600;
+        color: @red;
+      }
+    }
+
+    .mypic {
+      height: 300px;
+      width: 300px;
+      border-radius: 2000px;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .Main{
+    .greeting{
+      flex-direction: column;
+      .aboutme{
+        max-width: 100%;
+        padding-right: 0px;
+        p{
+          font-size: 16px;
+        }
+        .myname {
+          font-size: 40px;
+        }
+      }
+      .mypic {
+        margin-top: 30px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Main{
+    .greeting{
+      .aboutme{
+        max-width: 100%;
+        padding-right: 0px;
+        p{
+          font-size: 16px;
+        }
+        .myname {
+          font-size: 30px;
+        }
+      }
+      .mypic {
+        margin-top: 30px;
+      }
+
+    }
+  }
+}
+
+
+// --------------------------------------------------- Education -------------------------------------------
+.Education {
+  p {
+    color: @gray;
+  }
+}
+
+// --------------------------------------------------- Skills -------------------------------------------
+
+.Skills {
+  h5 {
+    color: @darkcream;
+    font-weight: 200;
+    padding-bottom: 18px;
+  }
+}
+
+// --------------------------------------------------- Experience -------------------------------------------
+.Experience {
+  text-align: center;
+
+  span {
+    color: @blue;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  p {
+    color: @gray;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .Experience{
+    span{
+      font-size: 16px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
+// --------------------------------------------------- Portfolio -------------------------------------------
+.portsection {
+  margin-top: 60px;
+
+  .porttitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: @lightgray;
+  }
+
+  .portcard {
+    margin: 20px 20px;
+  }
+}
+
+.right {
+  padding-left: 25px;
+  margin-top: 20px;
+
+  .projectname {
+    color: @brown;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 22px;
+    color: @darkgray;
+  }
+
+  .projecttools {
+    font-size: 16px;
+    color: @gray;
+  }
+
+  .projectexplain {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+
+.graphicinfo{
+  .graphic {
+    background-image: url('../public/assets/img/town_example.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-align: center;
+    .flexbox {
+      display: flex;
+      position: relative;
+      margin-bottom: 20px;
+      .walk {
+        z-index: 1;
+        margin-top: 145px;
+        position: relative;
+        left: 20px;
+        animation: mymove 12s linear infinite;
+      }
+      
+      @keyframes mymove {
+        0% {
+          transform: translateX(-500px);
+        }
+      
+        100% {
+          transform: translateX(1300px);
+        }
+      }
+      
+      .jump {
+        margin-top: 145px;
+      }
+      
+      .cat {
+        margin-top: 340px;
+        margin-left: 550px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .portsection{
+    .porttitle{
+      font-size: 14px;
+    }
+  }
+  #video{
+    width: 360px;
+  }
+}
+
+// --------------------------------------------------- Resume -------------------------------------------
+.Resume{
+  background-color: @cream;
+  display: flex;
+  justify-content: center;
+  padding: 90px 0;
+  a{
+    color: @darkgray;
+  }
+}
+.paper{
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  border: 1px solid @red;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  span{
+    color: @darkgray;
+  }
+  p{
+    font-size: 14px;
+    margin: 2px 0;
+  }
+  h1{
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: @red;
+  }
+  h3{
+    margin-top: 20px;
+    font-size: 20px;
+    color: @brown;
+    width: fit-content;
+    padding: 0px 10px;
+    background-color: @darkcream;
+    border-radius: 30px;
+  }
+  h4{
+    margin-top: 10px;
+    color: @red;
+    font-weight: 200;
+  }
+  
+  .resume_left{
+    min-width: 240px;
+    max-width: 240px;
+    padding-right: 20px;
+    .mypic{
+      border-radius: 300px;
+    }
+    .contact{
+      span{
+        margin-left: 5px;
+      }
+    }
+    .skillgrid{
+      display: flex;
+      justify-content: space-around;
+    }
+    .skillgraphic,.skilllanguge{
+      margin-left: 25px;
+    }
+  }
+  .resume_right{
+    max-width: 300px ;
+    p{
+      font-size: 13px;
+    }
+    .name{
+      border-bottom: 4px solid @red;
+      padding-top: 10px;
+    }
+    .education{
+      margin-bottom: 10px;
+      span{
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.paper:hover{
+  border-color: @darkcream;
+}
+
+@media (max-width: 414px) {
+  .paper{
+    max-width: 414px;
+    padding: 0 10px;
+    border: none;
+    h1{
+      font-size: 30px;
+    }
+  }
+}
