@@ -103,11 +103,11 @@ function Resume() {
 
                     <h3>Education</h3>
                     <div className={`college education`}>
-                        <h4>College | 2015-2018 </h4>
+                        <h4>College | 2019-2022 </h4>
                         <span>Media Technology at King Mongkut&apos;s University of Technology Thonburi (GPAX 3.51)</span>
                     </div>
                     <div className={`hightschool education`}>
-                        <h4>High School | 2019-2022 </h4>
+                        <h4>High School | 2015-2018 </h4>
                         <span>Math-Eng (MEP) at Suankularb Wittayalai Thonburi</span>
                     </div>
                     <h3>Experience</h3>
