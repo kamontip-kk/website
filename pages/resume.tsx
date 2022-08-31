@@ -8,7 +8,7 @@ function Resume() {
     return (
         <div className={`Resume`}>
             <a
-                    href="/assets/resume.pdf"
+                    href="/assets/kamontip_resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
