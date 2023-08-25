@@ -241,7 +241,7 @@ export const PROGRAMMING_PORT: object[] = [
         url: 'https://firebasestorage.googleapis.com/v0/b/resume-38774.appspot.com/o/fit.mp4?alt=media&token=7ac0c982-bcb4-434a-918b-9c845f6dddb7',
         title: 'FIT (Telesale)',
         tools: 'React Native , TypeScript , Node.js , MySQL',
-        explain: 'FIT Application is used buy telesales to check car and non-motor insurance premiums, follow up on policies and etc. I am mainly responsible for developing this application.',
+        explain: 'FIT Application is used by telesales to check car and non-motor insurance premiums, follow up on policies and etc. I am mainly responsible for developing this application.',
         type: 'Application Development (Full-stack)'
     },
     {
