@@ -117,6 +117,7 @@
 
 .Headercolor {
   background-color: @red;
+  border-bottom: 1px solid @cream;
 }
 
 .Header {
@@ -124,7 +125,6 @@
   height: 80px;
   width: 100%;
   position: fixed;
-  border-bottom: 1px solid @cream;
   transition: 0.3s;
 
   .header_container {
@@ -132,8 +132,8 @@
     align-items: center;
     padding: 0px 350px;
     height: 100%;
-    justify-content: space-between;
     font-size: 24px;
+    width: 100%;
 
     a {
       color: @red;
@@ -149,18 +149,12 @@
 
     .leftitem{
       height: 100%;
-      width: fit-content;
+      margin-right: auto;
     }
 
-    .rightnav {
-      display: flex;
+    .rightitem {
       height: 100%;
-
-      .rightitem {
-        width: fit-content;
-        height: 100%;
-        margin-left: 40px;
-      }
+      margin-left: 40px;
     }
 
   }
@@ -246,7 +240,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   .Footer{
     padding: 10px 40px;
     .footersection {
@@ -493,7 +487,6 @@
   border: 1px solid @red;
   border-radius: 20px;
   transition: 0.3s;
-  cursor: pointer;
   span{
     color: @darkgray;
   }
@@ -562,6 +555,7 @@
 .paper:hover{
   border-color: @darkcream;
 }
+
 
 @media (max-width: 414px) {
   .paper{

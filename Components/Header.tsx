@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Router, useRouter } from "next/router";
+import { NAV_BAR } from "../public/constants";
 
 function Header() {
     const [fontcolor, setFontcolor] = useState('#e94629');
@@ -30,39 +31,19 @@ function Header() {
 
 
     return (
-        <div className={color ? `Header Headercolor` : `Header`}>
+        <div className={color ? `Header Headercolor` : `Header`} style={{ zIndex: 99}}>
             <div className={`header_container`}>
-                <div className={`leftitem`}>
-                    <div className={param == 'home' ? `Navunderline item` : `item`}>
-                        <Link href={`/`}>
+                {NAV_BAR.map((e:any, i:number) => {
+                    return <div key={i} className={i == 0 ? `leftitem` : `rightitem`}>
+                    <div className={param == e.value ? `Navunderline item` : `item`}>
+                        <Link href={e.href}>
                             <a className={`navitem`} style={{ color: fontcolor }}>
-                                Kamontip
+                                {e.label}
                             </a>
                         </Link>
                     </div>
                 </div>
-
-                <div className={`rightnav`}>
-                    <div className={`rightitem`}>
-                        <div className={param == 'port' ? `Navunderline item` : `item`}>
-                            <Link href={`/portfolio`}>
-                                <a className={`navitem`} style={{ color: fontcolor }}>
-                                    Portfolio
-                                </a>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className={`rightitem`}>
-                        <div className={param == 'resume' ? `Navunderline item` : `item`}>
-                            <Link href={`/resume`}>
-                                <a className={`navitem`} style={{ color: fontcolor }}>
-                                    Resume
-                                </a>
-                            </Link>
-                        </div>
-                    </div>
-
-                </div>
+                })}
             </div>
         </div>
     )

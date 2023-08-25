@@ -9,10 +9,6 @@ import Link from 'next/link';
 
 function Graphics() {
     const [open, setOpen] = useState(false);
-    // const [url, setUrl] = useState<string>();
-    // const [title, setTitle] = useState<string>();
-    // const [explain, setExplain] = useState<string>();
-    // const [tools, setTools] = useState<string>();
     const { Meta } = Card;
     const [isWalk,setIswalk] = useState(false);
     const [isJump,setIsjump] = useState(true);
@@ -23,7 +19,6 @@ function Graphics() {
     }
 
     const onClick = () => {
-        // setUrl();
         setOpen(true);
     }
 

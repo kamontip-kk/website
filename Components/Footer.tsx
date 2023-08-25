@@ -39,10 +39,10 @@ function Footer() {
                         </Link>
                     </div>
                     <div className={`contact`}>
-                        <Link href={`https://goo.gl/maps/K8GLQNyVJR7qPvJF8`}>
+                        <Link href={`https://goo.gl/maps/vj11wSHWn4Cp2wXk7`}>
                             <a>
                                 <HomeTwoTone twoToneColor={`#afafac`} style={{ fontSize: '20px', color: '#afafac' }} />
-                                <span className={`contactitem`}>Bangmod, Thungkru, Bangkok, 10140 </span>
+                                <span className={`contactitem`}>Khlong San, Bangkok, 10600 </span>
                             </a>
                         </Link>
                     </div>
